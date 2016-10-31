@@ -21,5 +21,6 @@ public class add_jams_activity extends AppCompatActivity {
         arr_jams = (ListView)findViewById(R.id.jams_view);
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, jams);
         arr_jams.setAdapter(adapter);
+        new Intent();
     }
 }

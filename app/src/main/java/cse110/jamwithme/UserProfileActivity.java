@@ -9,6 +9,7 @@ import android.widget.Button;
 public class UserProfileActivity extends AppCompatActivity {
 
     public Button add_jams;
+    public Button add_pictures;
 
     // Give 'add_jams' button functionality
     public void init() {
@@ -21,6 +22,10 @@ public class UserProfileActivity extends AppCompatActivity {
                 startActivity(access_jams);
             }
         });
+
+        add_pictures = (Button)findViewById(R.id.add_pics);
+
+
     }
 
     @Override

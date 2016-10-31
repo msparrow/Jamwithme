@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cse110.jamwithme">
 
@@ -10,6 +11,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".logina_ctivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,6 +19,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
         <activity android:name=".RegisterActivity" />
         <activity android:name=".UserProfileActivity" />
         <activity android:name=".Splash">
@@ -27,6 +30,29 @@
             </intent-filter>
         </activity>
         <activity android:name=".add_jams_activity"></activity>
+        <activity android:name=".Pictures" />
+
+        <ImageView
+            android:id="@+id/profilePic"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="150dp"
+            android:layout_height="150dp"   />
+
+        <ImageView
+            android:id="@+id/extraPics"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="150dp"
+            android:layout_height="150dp"   />
+
+        <Button
+            android:id="@+id/bAddImage"
+            android:text="Upload Image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:nmae="android.permission.READ_EXTERNAL_STORAGE"/>
 
 </manifest>
